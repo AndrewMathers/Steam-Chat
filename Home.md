@@ -17,7 +17,7 @@
 
 ### [Alternative Database Config](https://github.com/Efreak/node-steam-chat-bot/issues/40)
 
-#### Ideas to improve the bot and avoid heroku's limitations
+##### Ideas to improve the bot and avoid heroku's limitations
 * Move logs into the database
 * Abstract the database functionality away from firebase and make it available to other plugins (logs, infobot). Firebase is not enough for chat logs, so provide other options
     * [Firebase hacker plan](https://www.firebase.com/pricing.html) (100mb) is definitely plenty for just configuration, and probably for the infobot stuff as well. No good for logs, unless you only want error logs, or you don't want to keep full history (my logs are >200mb)

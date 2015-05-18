@@ -18,6 +18,7 @@
 ### [Alternative Database Config](https://github.com/Efreak/node-steam-chat-bot/issues/40)
 
 ##### Ideas to improve the bot and avoid heroku's limitations
+* Heroku is now only allowing free servers to run 18 hours a day. These improvements are still planned as they'll be useful elsewhere, but they're getting a lower priority.
 * Move logs into the database
 * Abstract the database functionality away from firebase and make it available to other plugins (logs, infobot). Firebase is not enough for chat logs, so provide other options
     * [Firebase hacker plan](https://www.firebase.com/pricing.html) (100mb) is definitely plenty for just configuration, and probably for the infobot stuff as well. No good for logs, unless you only want error logs, or you don't want to keep full history (my logs are >200mb)
@@ -28,14 +29,16 @@
 * Perhaps add options for other providers than heroku as well, allowing the bot to be easily run on Scalingo, red hat's openshift (1gb persistent storage on free plan *and* custom domains), others. (basically specify the environment variable containing certain information in the config file).
 * Moving logs, etc into the database will require some kind of caching mechanism, as most providers don't guarantee uptime for the databases. For example, heroku guarantees "less than four hours" of database downtime per month for the free database, meaning that we'll have to accept it not being available.
 
-### Test core functions
+### [Pushbullet](https://github.com/Efreak/node-steam-chat-bot/issues/56)
 
-- See [#37](https://github.com/Efreak/node-steam-chat-bot/issues/37)
+~~I'd like to get some kind of notification when someone messages the bot, or says my name in chat. This could probably be extended rather easily to allow users to give the bot their own Pushbullet API keys so they can get similar notifications when someone wants them.~~ Basic pushbullet integration is done.
 
-### Pushbullet
-
-I'd like to get some kind of notification when someone messages the bot, or says my name in chat. This could probably be extended rather easily to allow users to give the bot their own Pushbullet API keys so they can get similar notifications when someone wants them.
+Improve pushbullet plugin to use oauth and openid for pushbullet and steam--interface using the browser, not private messages, though maybe leave PMs as an option as well.
 
 ### [Requests & Bugs](https://github.com/Efreak/node-steam-chat-bot/issues)
 
 - [Antiflood plugin](https://github.com/Efreak/node-steam-chat-bot/issues/13)
+
+### [Webserver in core](https://github.com/Efreak/node-steam-chat-bot/issues/57)
+
+Move the webserver out of the logtrigger and into chatBot.js. This is required to allow other triggers to use it, such as pushbullet or any other future plugins (like serving basic files?)

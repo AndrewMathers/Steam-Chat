@@ -73,4 +73,4 @@ console.log('Single quotes are GOOD!");
 
 Alright, thanks the end of my rant. I'm only writing this since I just spent hours fixing codacy stuff. Basically, don't do anything that would upset codacy.
 
-I would also recommend following (this guide)[https://github.com/airbnb/javascript], which is where I got some of these from. Thanks, and happy coding!
+I would also recommend following [this guide](https://github.com/airbnb/javascrip), which is where I got some of these from. Thanks, and happy coding!

@@ -63,8 +63,8 @@ console.log('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789098765
 
 //good
 console.log('ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
-'abcdefghijklmnopqrstuvwxyz' +
-'1234567890987654321');
+        'abcdefghijklmnopqrstuvwxyz' +
+        '1234567890987654321');
 ```
 
 
@@ -96,6 +96,10 @@ var object = {
 ```
 
 
-Alright, thanks the end of my rant. I'm only writing this since I just spent hours fixing codacy stuff. Basically, don't do anything that would upset codacy.
+Alright, thanks, that's the end of my rant. I'm only writing this since I just spent hours fixing codacy stuff. Basically, don't do anything that would upset codacy.
 
-I would also recommend following [this guide](https://github.com/airbnb/javascrip), which is where I got some of these from. Thanks, and happy coding!
+I would also recommend following [this guide](https://github.com/airbnb/javascript), which is where I got some of these from. Thanks, and happy coding!
+-- @[dragonbanshee](https://github.com/dragonbanshee)
+
+For your convenience as a linux user, there are symlinks to important files in the root (chatBot.js, triggers folder, baseTrigger.js). These won't work on Windows unless you're using cygwin to open files, as git for windows doesn't like symlinks. Sorry!
+-- @[Efreak](https://github.com/Efreak)

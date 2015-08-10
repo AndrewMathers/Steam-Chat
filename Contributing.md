@@ -32,13 +32,17 @@ if(variable1 !== variable2) {}
 ```javascript
 //bad
 if(variable1 === variable2) {
-    same = true
+    same = true;
 };
+
+console.log('bad bad bad')
 
 //good
 if(variable1 === variable2) {
     same = true;
 }
+
+console.log('good good good');
 ```
 
 
@@ -50,7 +54,7 @@ if(variable1===variable2){
 }
 
 //good
-if (variable1 === variable2) {
+if(variable1 === variable2) {
     same = true;
 }
 ```
@@ -68,13 +72,13 @@ console.log('ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
 ```
 
 
-- Use single quotes
+- Use single quotes (only use double quotes in package.json)
 ```javascript
 //bad
 console.log("Double quotes are BAD!");
 
 //good
-console.log('Single quotes are GOOD!");
+console.log('Single quotes are GOOD!');
 ```
 
 
@@ -112,8 +116,17 @@ prototype._respond = function() {
 }
 ```
 
+- Don't put extra spaces after a line (efreak told me this)(you probably won't be able to see the space, but its there)(I think atom (my text editor) removes them automatically, but still don't do it)
+```javascript
+//bad
+console.log('space over here --->'); 
 
-Alright, thanks, that's the end of my rant. I'm only writing this since I just spent hours fixing codacy stuff. Basically, don't do anything that would upset codacy.
+//good
+console.log('no space --->');
+```
+
+
+That's the end of my guide. I'm only writing this since I just spent hours fixing codacy stuff. Basically, don't do anything that would upset codacy.
 
 I would also recommend following [this guide](https://github.com/airbnb/javascript), which is where I got some of these from. Thanks, and happy coding!
 -- @[dragonbanshee](https://github.com/dragonbanshee)

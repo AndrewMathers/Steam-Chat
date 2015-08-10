@@ -97,8 +97,6 @@ var object = {
 
 - Don't declare variables and not use them
 ```javascript
-var request = require('request');
-
 //bad
 prototype._respond = function() {
     var that = this;

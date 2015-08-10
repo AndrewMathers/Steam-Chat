@@ -81,4 +81,4 @@ NewTrigger.prototype._respond = function(toId, userId, message) {
 }
 ```
 
-That's it for the guide. If you need help, please feel free to join our [chatbot development chat (aka botopia)[http://steamcommunity.com/groups/steam-chat-bot]. Thanks for reading, and have fun developing your own triggers!
+That's it for the guide. If you need help, please feel free to join our [chatbot development chat (aka botopia)](http://steamcommunity.com/groups/steam-chat-bot). Thanks for reading, and have fun developing your own triggers!

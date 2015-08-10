@@ -1,4 +1,4 @@
-When contributing by opening a pull request, please make sure you follow the style that already exists in the files. Some common examples:
+When contributing by opening a pull request, please make sure you follow the style that already exists in the files. PLEASE PLEASE PLEASE also check your pull request on [codacy](https://www.codacy.com/app/node-steam-chat-bot/steam-chat-bot/pullRequests?bid=2286175) so I don't need to spend 2 hours and 5 commits fixing all of your problems. Some common examples:
 
 
 - Braces on the same line
@@ -92,6 +92,25 @@ var object = {
     this.first: 1,
     this.second: 2,
     this.third: 3
+}
+```
+
+- Don't declare variables and not use them
+```javascript
+var request = require('request');
+
+//bad
+prototype._respond = function() {
+    var that = this;
+    this.winston.info('Didn\'t use that, -10 points');
+}
+
+//good
+prototype._respond = function() {
+    var that = this;
+    setTimeout(function() {
+        that.winston.info('Used that, +10 points');
+    }, 100);
 }
 ```
 

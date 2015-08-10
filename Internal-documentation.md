@@ -79,6 +79,6 @@ NewTrigger.prototype._respond = function(toId, userId, message) {
     //You are going to want to use returns in here to make the trigger stop when it needs to
     //Use this/that._sendMessageAfterDelay(toId, whatevermessage); to send a message to the id of toId
 }
-
+```
 
 That's it for the guide. If you need help, please feel free to join our [chatbot development chat (aka botopia)[http://steamcommunity.com/groups/steam-chat-bot]. Thanks for reading, and have fun developing your own triggers!

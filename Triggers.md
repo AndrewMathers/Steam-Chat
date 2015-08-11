@@ -43,6 +43,7 @@ These are all methods that can make the bot do something.
 
 ### mute()
 - Mutes the bot so it can't talk in a chat room
+
 ### unmute()
 - Reverses `mute` so the bot can talk again
 

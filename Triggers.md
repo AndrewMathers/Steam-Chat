@@ -156,10 +156,10 @@ These are all methods that can make the bot do something.
 - method is the method, ex: 'GetPlayerDetails'
 - version is the version number, omit the leading 0s, ex: 1
 - request is the type of request, either 'get' or 'post'
-- options is an object, will be automatically serialized, matches the following:
+- options is an object, will be automatically serialized (?json=true&steamids=76561198091343023), heres an example:
     - json: 'true',
-    - steamids: steamID
-- Returns a promise, call .then to use it  
+    - steamids: '76561198091343023'
+- Returns a promise, call .then to use it, [example](https://github.com/Efreak/node-steam-chat-bot/blob/development/lib/triggers/banCheckTrigger.js#L77)
 
 
 That's it for the chatBot.js methods and properties. Now that you know how chatBot works internally, lets look at creating triggers.. The template for creating a trigger is as follows:

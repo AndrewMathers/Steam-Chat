@@ -4,7 +4,7 @@
 1. Update files
   1. Update CONTRIBUTORS.md
     - this is annoying, so eventually we might get rid of this part of the process. This is the process that gives us CONTRIBUTORS.md and also updates package.json with the contributor info.
-    - Use the nodejs contributors package to automate this, though you might need to do some hand editing as well.
+    - Use [`contributor`](https://www.npmjs.com/package/contributor) to automate this, though you might need to do some hand editing as well (email addresses, URLs, bonnici's name).
       - You need to merge development into master first, because contributors grabs info from the github api, and github only looks at the default/master branch.
     1. `git checkout master`
     1. `git reset --hard @~5`
@@ -12,8 +12,10 @@
     1. `git merge development`
     1. `git push --force`
     1. `git checkout development`
-    1. `contributors`
-    1. `git add CONTRIBUTORS.md`
+    1. `contributor`
+    1. `mv contributors.md CONTRIBUTORS.md`
+    1. `nano CONTRIBUTORS.md package.json` Fix bonnici's name in CONTRIBUTORS.md and the names/urls in package.json.
+    1. `git add CONTRIBUTORS.md package.json`
   1. Update CHANGELOG.md
   1. Update chatBot.js version number to X.Y.Z (no -dev tag)
   1. `git add chatBot.js`

@@ -59,7 +59,7 @@ These are all methods that can make the bot do something.
 - Sends a protobuf message
 - Header is an object that matches the following:
     - msg: [Steam EMsg](https://github.com/SteamRE/SteamKit/blob/master/Resources/SteamLanguage/emsg.steamd)
-    - proto: [CMsgProtobufHeader](https://github.com/SteamRE/SteamKit/blob/master/Resources/Protobufs/steamclient/steammessages_base.proto#L11)
+    - proto: [CMsgProtoBufHeader](https://github.com/SteamRE/SteamKit/blob/master/Resources/Protobufs/steamclient/steammessages_base.proto#L11)
 - Body is a buffer containing the message
 
 ### joinChat(roomID, autoJoinAfterDisconnect)
